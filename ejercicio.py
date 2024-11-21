@@ -5,7 +5,11 @@ import matplotlib.pyplot as plt
 
 # Local URL: http://localhost:8501
 
-
+def mostrar_informacion_alumno():
+    with st.container(border=True):
+        st.markdown('**Legajo:** 58.777')
+        st.markdown('**Nombre:** Alan Jassán')
+        st.markdown('**Comisión:** C2')
 
 st.set_page_config(page_title="Ventas por Sucursal", layout="wide")
 
@@ -19,6 +23,7 @@ def calcular_estadisticas(df):
 
 st.sidebar.title("Cargar archivo de datos")
 uploaded_file = st.sidebar.file_uploader("Subir archivo CSV", type="csv")
+mostrar_informacion_alumno()
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
