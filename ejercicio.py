@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 
 def mostrar_informacion_alumno():
     with st.container(border=True):
-        st.markdown('**Legajo:** 58.777')
-        st.markdown('**Nombre:** Alan Jassán')
+        st.markdown('**Legajo:** 58.909')
+        st.markdown('**Nombre:** Argañaraz Leonardo Ramiro')
         st.markdown('**Comisión:** C2')
 
 st.set_page_config(page_title="Ventas por Sucursal", layout="wide")
